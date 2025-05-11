@@ -1,4 +1,3 @@
-
 **Monitoring User Login Status**
 
 * Successful Login |  
@@ -12,3 +11,11 @@
 
 * User Account Lockouts |  
 `eventType eq "user.account.lock"`
+
+**Tracking Application Access**
+
+* Successful Application SSO |
+`eventType eq "user.authentication.sso" and outcome.result eq "SUCCESS"`
+
+* Denied Application Access |
+`eventType eq "application.policy.sign_on.deny_access"`
