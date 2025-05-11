@@ -1,14 +1,14 @@
 
 **Monitoring User Login Status**
 
-* Successful Login |
+* Successful Login |  
 `eventType eq "user.session.start" and outcome.result eq "SUCCESS"`
 
-* Failed Login |
+* Failed Login |  
 `outcome.result eq "FAILURE" and eventType eq "user.authentication.authenticate"`
 
-* Bad Password |
+* Bad Password |  
 `outcome.reason eq "Authentication failed: bad username or password"`
 
-* User Account Lockouts |
+* User Account Lockouts |  
 `eventType eq "user.account.lock"`
