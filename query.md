@@ -1,9 +1,9 @@
 
 <ins>**MONITORING USER LOGIN STATUS**<ins>
 
-SUCCESSFUL LOGIN
+SUCCESSFUL LOGIN 
 `eventType eq "user.session.start" and outcome.result eq "SUCCESS"`
 
-FAILED LOGIN
+FAILED LOGIN 
 `outcome.result eq "FAILURE" and eventType eq "user.authentication.authenticate"`
 
